@@ -15,7 +15,7 @@ shinyServer(function(input, output) {
   ##HTML Texts
   output$mapText=renderText({paste("Birth Rate for Year ", input$Year)})
   output$chartText=renderText({"Birth Rate changes in individual states"})
-  output$tableText=renderText({"Source Database"})
+  output$tableText=renderText({"Source Data"})
   
   ##Data Table 
   output$birth.rate.table <- renderDataTable(getBirthRateDF())
